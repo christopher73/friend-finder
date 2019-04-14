@@ -1,13 +1,15 @@
 var express = require("express");
 var app = express();
 
-var apiRoutes = require("./app/routing/apiRoutes");
+const routers = require("./app/routing/apiRoutes");
+
+//var apiRoutes = require("./app/routing/apiRoutes");
 var handlebars = require("express-handlebars");
 
 app.engine(".hbs", handlebars({ defaultLayout: "layout", extname: ".hbs" }));
 app.set("view engine", ".hbs");
 
-app.use("/", apiRoutes);
+app.use("/", routers.router);
 // Set the port of our application
 // process.env.PORT lets the port be set by Heroku
 var PORT = process.env.PORT || 8080;
