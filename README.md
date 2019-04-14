@@ -1,6 +1,6 @@
 ### In this Project I made a Dating App using NodeJS + Express + handlebarsJS
 
-### See App live @ https://damp-island-28383.herokuapp.com/survey
+### See App live @ https://damp-island-28383.herokuapp.com
 
 ### Instructions
 
