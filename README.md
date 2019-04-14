@@ -13,21 +13,5 @@
 
 * I did not use a DB instead i stored User localy
 
-```
-function findFish(fish, ocean) {
-  let results = [];
-  for (let j = 0; j < ocean.length; j++) {
-    let count = 0;
-    let fish2 = ocean[j].score;
-    for (let i = 0; i < fish2.length; i++) {
-      let tmp = fish[i] - fish2[i];
-      count += Math.abs(tmp);
-      console.log("tmp :" + tmp + " score " + count);
-    }
-    results.push(count);
-  }
-  console.log(results);
-  var a = Math.min(...results);
-  return results.indexOf(a);
-}
-```
+* JavaScript function to get lowest diference in array values
+  `function findFish(fish, ocean) { let results = []; for (let j = 0; j < ocean.length; j++) { let count = 0; let fish2 = ocean[j].score; for (let i = 0; i < fish2.length; i++) { let tmp = fish[i] - fish2[i]; count += Math.abs(tmp); console.log("tmp :" + tmp + " score " + count); } results.push(count); } console.log(results); var a = Math.min(...results); return results.indexOf(a); }`
