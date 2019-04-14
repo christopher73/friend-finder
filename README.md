@@ -17,7 +17,7 @@
 
 * JavaScript function to get lowest diference in array values
 
-      ```javascript
+```javascript
       function findFish(fish, ocean) {
         let results = [];
         for (let j = 0; j < ocean.length; j++) {
@@ -34,4 +34,4 @@
         var a = Math.min(...results);
         return results.indexOf(a);
       }
-      ```
+```
